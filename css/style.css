@@ -16,6 +16,9 @@ body {
 .container {
     height: 100%;
 }
+.background-container {
+    height: 828px;
+}
 .img-top  {
     background: url("../images/bg-pattern-top.svg");
     height: 328px;
@@ -32,8 +35,9 @@ body {
     background-position-x: 180px;
     background-repeat: no-repeat;
     position: relative;
+    background-position-y: 100px;
     z-index: -1;
-    transform: translateY(-283px);
+    transform: translateY(-321px);
 }
 
     
@@ -44,10 +48,13 @@ body {
 }
 
 .card-top {
-    background: url("../images/bg-pattern-card.svg");
+    background: url(../images/bg-pattern-card.svg);
     height: 150px;
+    background-size: cover;
     border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
 }
+
 
 .card-mid {
         height: 150px;
