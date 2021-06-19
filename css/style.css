@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    background: var(--Dark-cyan);
+}
+
+:root {
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+    
+}
+@media screen and (min-width: 401px){
+    .profile-card-container {
+    display:flex;
+    justify-content: center;
+    }
+    .profile-card {
+        width: 27%;
+        transform: translateY(-146px);
+    }
+    
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+.background-container {
+    height: 828px;
+}
+.img-top  {
+    background: url("../images/bg-pattern-top.svg");
+    height: 328px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-position-x: -170px;
+}
+@media (min-width: 401px){  
+    .background-container { 
+        height: 723px;
+    } 
+.img-top {
+    height: 255px;
+    background-size: auto;
+    background-position-y: 0;
+    background-position-x: -282px;
+    background-position-y: bottom;
+    }
+}    
+    
+
+.img-bottom {
+    height: 430px;
+    background: url("../images/bg-pattern-bottom.svg");
+    background-size: cover;
+    background-position-x: 180px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    transform: translateY(-321px);
+}
+@media screen and (min-width: 401px) and (max-width: 1870px){
+.img-bottom {
+    background-position-x: 512px;
+    background-position-y: 55px;
+    transform: translateY(-381px);
+}
+}
+    
+.profile-card {
+    height: 400px;
+    padding: 10px 13px;
+    transform: translateY(-124px);
+}
+
+.card-top {
+    background: url("../images/bg-pattern-card.svg");
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+}
+
+
+.card-mid {
+        height: 150px;
+        background: white;
+        border-bottom: 1px solid lightgray;
+}
+
+.profile {
+    height: 80px;
+    display: flex;
+    background: white;
+}
+
+.icon.first {
+    width: 37%;
+  
+}
+.icon.second {
+    transform: translateY(-40px);
+    background: white;
+    width: 23%;
+    border-radius: 50%;
+}
+.icon.second img {
+    height: 100%;
+    width: 93%;
+    padding-left: 3px;
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+.icon-third {
+    width: 37%;
+}
+
+.profile-intro-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-intro-1 h2  {
+    margin: 0;
+}
+.profile-intro p {
+    text-align: center;
+    margin: 3px;
+}
+
+.card-bottom {
+    display: flex;
+    height: 100px;
+    background: white;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+}
+
+.status h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.status p{
+    text-align: center;
+    font-size: .9rem;
+}
